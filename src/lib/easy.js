@@ -1,2 +1,0 @@
-console.log("yes")
-window.addEventListener("message", (e) => {!!e.data.frameHeight && e.data.wallUuid === "auto-w-firmie" && (document.getElementById("auto-w-firmie").style.height = e.data.frameHeight);});

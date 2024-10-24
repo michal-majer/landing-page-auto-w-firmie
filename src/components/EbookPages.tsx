@@ -1,5 +1,8 @@
 import React from "react";
+import Image from 'next/image'
+import Page10 from '../data/pages/10.png';
 import Page12 from '../data/pages/12.png';
+import Page15 from '../data/pages/15.png';
 import Page21 from '../data/pages/21-2.png';
 import Diagram from '../data/pages/diagram.png';
 import { Questions } from "./Questions";

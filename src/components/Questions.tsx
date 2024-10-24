@@ -4,42 +4,42 @@ import { cn } from "@/src/lib/utils";
 import { AnimatedList } from "@/src/components/magicui/AnimatedList";
 
 interface Item {
-  name: string;
+  // name: string;
   description: string;
-  icon?: string;
+  // icon?: string;
   color: string;
-  time?: string;
+  // time?: string;
 }
 
 let notifications = [
   {
-    name: "Leasing na ryczałcie",
+    // name: "Leasing na ryczałcie",
     description: "Leasing na ryczałcie, czy warto zmienić na podatek liniowy?",
     color: "#00C9A7"
   },
   {
-    name: "Najkorzystniejsze formy",
+    // name: "Najkorzystniejsze formy",
     description: "Jak najkorzystniej kupić auto powyzej 150 tys. zł brutto?",
-    time: "10m ago",
-    icon: "💬",
+    // time: "10m ago",
+    // icon: "💬",
     color: "#FFB800",
   },
   {
-    name: "Optymalizacja",
+    // name: "Optymalizacja",
     description: "Jak optymalziować wpłatę początkową i długość leasingu?",
-    time: "5m ago",
-    icon: "💬",
+    // time: "5m ago",
+    // icon: "💬",
     color: "#FF3D71",
   },
   {
-    name: "Darownizna",
+    // name: "Darownizna",
     description: "Kiedy i jak mogę przekazać auto w formie darowizny?",
-    time: "2m ago",
-    icon: "💬",
+    // time: "2m ago",
+    // icon: "💬",
     color: "#1E86FF",
   },
   {
-    name: "Auto Elektryczne ⚡️, a spaliowe ⛽️",
+    // name: "Auto Elektryczne ⚡️, a spaliowe ⛽️",
     description: "Auto Elektryczne ⚡️, a spaliowe ⛽️ - które korzystniejsze?",
     color: "#FF3D71"
   },  
@@ -47,7 +47,7 @@ let notifications = [
 
 notifications = Array.from({ length: 10 }, () => notifications).flat();
 
-const Notification = ({ name, description, icon, color, time }: Item) => {
+const Notification = ({ description, color }: Item) => {
   return (
     <figure
       className={cn(
