@@ -8,6 +8,7 @@ import { LoveWall } from '../components/LoveWall';
 import { Blog } from '../components/Blog';
 import { Footer } from '../components/Footer';
 import Particles from '../components/magicui/Particles';
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <Analytics/>
       <Header />
       <Hero />
       <HeroVideo />
